@@ -5,12 +5,9 @@ import state from '../state.json';
 
 const CounterContainer = ({ count, dispatch }) => {
     return(
-        <div className="CounterContainer">
-            <div className="ContainerTitle">
-                <h1>A counter with Redux</h1>
-            </div>
+        <div className="counterContainer">
             <p>{count}</p>
-            <div className="ContainerActions">
+            <div className="containerActions">
                 <button
                     onClick={() => dispatch(state.add1Action)}
                 >
